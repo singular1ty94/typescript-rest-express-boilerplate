@@ -1,0 +1,62 @@
+{
+	"basePath": "/",
+	"definitions": {},
+	"info": {
+		"description": "An Express server with Typescript-rest and Sequelize migrations",
+		"license": {
+			"name": "MIT"
+		},
+		"title": "Typescript-Rest-Express-Boilerplate",
+		"version": "1.0.0"
+	},
+	"paths": {
+		"/example/test": {
+			"get": {
+				"operationId": "ExampleTest",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"schema": {
+							"type": "object"
+						}
+					}
+				},
+				"description": "",
+				"parameters": []
+			}
+		},
+		"/example/complex-test": {
+			"get": {
+				"operationId": "ExampleFind",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"schema": {
+							"type": "object"
+						}
+					}
+				},
+				"description": "",
+				"parameters": [
+					{
+						"description": "",
+						"in": "query",
+						"name": "search",
+						"required": true,
+						"type": "string"
+					}
+				]
+			}
+		}
+	},
+	"swagger": "2.0",
+	"securityDefinitions": {},
+	"consumes": "application/json",
+	"produces": "application/json"
+}

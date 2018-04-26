@@ -1,0 +1,10 @@
+{
+  "swagger": {
+    "outputDirectory": "./swagger",
+    "name": "Typescript-Rest-Express-Boilerplate",
+    "description": "An Express server with Typescript-rest and Sequelize migrations",
+    "entryFile": "./server/api.ts",
+    "produces": "application/json",
+    "consumes": "application/json"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "files": ["server/index.ts"],
+  "include": ["server/**/*.ts", "server/migrations/*.js"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "target": "es6",
+    "outDir": "dist",
+    "rootDir": "server",
+    "sourceMap": false,
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "typeRoots": ["node_modules/@types"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true
+  }
+}
